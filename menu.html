@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style-guide.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/tab-img.png">
+    <script src="main.js" defer></script>
+    <title>Ember Coffee | Menu </title>
+</head>
+<body>
+
+    
+      <nav class="nav-demo nav-minimal nav-ember">
+        <img src="/images/brand-logo.png" alt="" class="logo">
+
+               <div class="mini-music-player" id="music-player">
+    <button id="ambient-toggle" class="player-control-btn" aria-label="Play/Pause Ambient Sounds">
+        <span class="player-icon">▶</span>
+    </button>
+    
+    <div class="player-track-info">
+        <span class="track-title" id="track-title">Cafe Ambience</span>
+        <span class="track-status" id="player-status">Paused</span>
+    </div>
+
+    <div class="music-visualizer" id="visualizer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</div>
+
+<audio id="ambient-audio" src="audio/gentle-rain.mp3"></audio>
+
+<button class="hamburger-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+</button>
+
+        <div class="links">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="visit-us.html">Visit Us</a>
+        </div>
+      </nav>
+    
+      <main class="menu-page-container">
+  
+        <header class="menu-hero load-reveal">
+            <span class="section-tag">Our Offerings</span>
+            <h1 class="menu-main-title">The Ember Brews</h1>
+            <p class="menu-subtitle">Clean extractions, organic milks, and mindful sweeteners. Prepared slowly with intention.</p>
+        </header>
+
+        <section class="menu-ledger-grid">
+
+  <div class="menu-category-block scroll-reveal delay-1">
+    <h2 class="category-header">01 // Espresso & Coffee</h2>
+    <div class="category-divider"></div>
+    <div class="menu-list">
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Classic Iced Latte</span>
+          <span class="item-price">$5.50</span>
+        </div>
+        <p class="item-details">Double espresso poured over chilled organic milk. Clean, crisp, and refreshing.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Iced Spanish Latte</span>
+          <span class="item-price">$6.25</span>
+        </div>
+        <p class="item-details">Our double espresso sweetened with a silky, velvety swirl of condensed milk.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Warm Flat White / Cappuccino</span>
+          <span class="item-price">$5.25</span>
+        </div>
+        <p class="item-details">Expertly steamed micro-foam folded into our seasonal house espresso blend.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-category-block scroll-reveal delay-2">
+    <h2 class="category-header">02 // The Matcha Bar</h2>
+    <div class="category-divider"></div>
+    <div class="menu-list">
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">White Chocolate Matcha (Iced)</span>
+          <span class="item-price">$6.50</span>
+        </div>
+        <p class="item-details">Stone-ground Uji matcha whisked with oat milk and a melt of sweet white chocolate.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Strawberry Cloud Matcha</span>
+          <span class="item-price">$6.75</span>
+        </div>
+        <p class="item-details">Ceremonial matcha layered over cold milk and topped with fresh, organic strawberry cold foam.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Pure Ceremonial Matcha (Hot)</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <p class="item-details">Traditionally whisked Japanese green tea served with steamed oat milk. Earthy and balanced.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-category-block scroll-reveal delay-3">
+    <h2 class="category-header">03 // Smoothies & Shakes</h2>
+    <div class="category-divider"></div>
+    <div class="menu-list">
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">The Blue Velvet Smoothie</span>
+          <span class="item-price">$7.25</span>
+        </div>
+        <p class="item-details">Blueberries, banana, almond butter, vanilla protein, and oat milk. Thick and energizing.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Salted Caramel Espresso Shake</span>
+          <span class="item-price">$7.50</span>
+        </div>
+        <p class="item-details">Vanilla bean gelato blended with a shot of hot espresso, sea salt, and house caramel.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Green Powerhouse Smoothie</span>
+          <span class="item-price">$7.00</span>
+        </div>
+        <p class="item-details">Spinach, mango, pineapple, ginger, and coconut water. Pure liquid sunshine.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-category-block scroll-reveal delay-4">
+    <h2 class="category-header">04 // Elixirs & Refreshers</h2>
+    <div class="category-divider"></div>
+    <div class="menu-list">
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Yuzu Espresso Tonic</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <p class="item-details">Fever-Tree tonic and tart Japanese yuzu juice, topped with a floating double espresso shot.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Iced Hibiscus Berry Tea</span>
+          <span class="item-price">$5.00</span>
+        </div>
+        <p class="item-details">Cold-brewed tart hibiscus flowers, rosehips, and a touch of organic raw honey.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-category-block scroll-reveal delay-4">
+    <h2 class="category-header">05 // Provisions & Bakes</h2>
+    <div class="category-divider"></div>
+    <div class="menu-list">
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Warm Sourdough Toast</span>
+          <span class="item-price">$6.50</span>
+        </div>
+        <p class="item-details">Toasted artisan sourdough served with whipped salted butter and seasonal berry jam.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Sea Salt Chocolate Chunk Cookie</span>
+          <span class="item-price">$4.25</span>
+        </div>
+        <p class="item-details">Baked fresh daily in-house. Crispy edges, chewy center, topped with flaky Maldon salt.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-lead">
+          <span class="item-name">Almond Butter & Banana Croissant</span>
+          <span class="item-price">$5.75</span>
+        </div>
+        <p class="item-details">Flaky butter croissant loaded with creamy almond butter and fresh sliced banana.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+      </main>
+
+
+      <footer class="footer-demo footer-minimal">
+
+        <div class="footer-brand">
+          <h3>Ember Coffee</h3>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Ember Coffee. All rights reserved.</p>
+        </div>
+
+      </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+:root {
+    /* Brand Colours */
+    --color-bg: #FAF8F5;
+    --color-surface: #FFFFFF;
+
+    --color-text: #1C1C1C;
+    --color-text-muted: #6B6B6B;
+
+    --color-primary: #8B5E3C;
+    --color-primary-hover: #70492F;
+
+    --color-border: #E8E3DD;
+
+    /* Typography */
+    --font-headings: "Manrope", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /* Layout */
+    --border-radius: 16px;
+}

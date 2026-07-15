@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style-guide.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/tab-img.png">
+    <script src="main.js" defer></script>
+    <title>Ember Coffee | Home </title>
+</head>
+<body>
+
+    
+      <nav class="nav-demo nav-minimal nav-ember">
+        <img src="/images/brand-logo.png" alt="" class="logo">
+
+               <div class="mini-music-player" id="music-player">
+    <button id="ambient-toggle" class="player-control-btn" aria-label="Play/Pause Ambient Sounds">
+        <span class="player-icon">▶</span>
+    </button>
+    
+    <div class="player-track-info">
+        <span class="track-title" id="track-title">Cafe Ambience</span>
+        <span class="track-status" id="player-status">Paused</span>
+    </div>
+
+    <div class="music-visualizer" id="visualizer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</div>
+
+<audio id="ambient-audio" src="audio/gentle-rain.mp3"></audio>
+
+<button class="hamburger-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+</button>
+
+        <div class="links">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="visit-us.html">Visit Us</a>
+        </div>
+      </nav>
+
+      <main class="about-page-container">
+
+        <header class="about-hero load-reveal">
+    <div class="about-hero-video-wrapper">
+      <video autoplay loop muted playsinline class="about-hero-vid">
+        <source src="/images/coffee-workspace.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="about-hero-text">
+      <span class="section-tag">The Philosophy</span>
+      <h1 class="about-main-title">A Creative Sanctuary</h1>
+      <p class="about-subtitle">We built Ember to be an analog escape—where exceptional craft meets a warm, slow-paced space to catch your breath.</p>
+    </div>
+  </header>
+
+  <section class="about-split-grid">
+    
+    <div class="about-narrative scroll-reveal delay-1">
+      <div class="narrative-block">
+        <h2 class="narrative-header">01 // The Sanctuary</h2>
+        <p class="narrative-body">
+          Ember is designed for thinkers, creators, and those who just need to transition into a slower gear. With warm woods, low lighting, and a curated lo-fi soundtrack constantly spinning, you are invited to plug in, put your headphones on, and stay as long as you need.
+        </p>
+      </div>
+
+      <div class="narrative-block">
+        <h2 class="narrative-header">02 // The Craft</h2>
+        <p class="narrative-body">
+          We don’t believe cozy spaces should serve average drinks. Every espresso shot is pulled to a precise ratio, our ceremonial matcha is stone-ground and traditionally whisked, and we partner exclusively with independent roasters and organic dairy farms. 
+        </p>
+      </div>
+    </div>
+
+    <div class="about-visual-block scroll-reveal delay-2">
+  <div class="about-side-video-wrapper">
+    <video autoplay loop muted playsinline class="about-side-vid">
+      <source src="/images/pouring-latte.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+  </section>
+
+    <section class="about-guestbook-section scroll-reveal">
+  <div class="guestbook-header">
+    <span class="section-tag">Analog Guestbook</span>
+    <h3 class="guestbook-title">Notes from the Sanctuary</h3>
+  </div>
+
+  <div class="thoughts-canvas">
+    
+    <div class="thought-item tilt-left">
+      <p class="thought-text">"Finally cracked the third act of my script at the window bar today. Thank you for keeping the matcha cold foam coming."</p>
+      <span class="thought-author">— Alex M. (Table 4)</span>
+    </div>
+
+    <div class="thought-item tilt-right offset-down">
+      <p class="thought-text">"Warm wood, low lights, and infinite loop lo-fi. The absolute best place in the city to disappear into your sketchbook."</p>
+      <span class="thought-author">— Chloe T. (Corner Couch)</span>
+    </div>
+
+    <div class="thought-item">
+      <p class="thought-text">"Ember feels less like a cafe and more like a collective living room. The sourdough toast with sea salt is pure comfort."</p>
+      <span class="thought-author">— Anonymous (Quiet Room)</span>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+      <footer class="footer-demo footer-minimal">
+
+        <div class="footer-brand">
+          <h3>Ember Coffee</h3>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Ember Coffee. All rights reserved.</p>
+        </div>
+
+      </footer>
+</body>
+</html>

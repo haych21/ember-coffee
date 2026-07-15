@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style-guide.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/tab-img.png">
+    <script src="main.js" defer></script>
+    <title>Ember Coffee | Home </title>
+</head>
+<body>
+
+    
+      <nav class="nav-demo nav-minimal nav-ember">
+        <img src="/images/brand-logo.png" alt="" class="logo">
+
+        <div class="mini-music-player" id="music-player">
+    <button id="ambient-toggle" class="player-control-btn" aria-label="Play/Pause Ambient Sounds">
+        <span class="player-icon">▶</span>
+    </button>
+    
+    <div class="player-track-info">
+        <span class="track-title" id="track-title">Cafe Ambience</span>
+        <span class="track-status" id="player-status">Paused</span>
+    </div>
+
+    <div class="music-visualizer" id="visualizer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</div>
+
+<audio id="ambient-audio" src="audio/gentle-rain.mp3"></audio>
+
+<button class="hamburger-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+</button>
+
+        <div class="links">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="visit-us.html">Visit Us</a>
+        </div>
+      </nav>
+
+      <header class="video-hero">
+        <video autoplay loop muted playsinline class="hero-video-asset">
+            <source src="/images/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span class="hero-badge">Freshly Roasted</span>
+            <h1 class="hero-title">Ember Coffee</h1>
+            <p class="hero-lead">A modern, minimalist coffee bar built on intentional craftsmanship and warm atmospheres.</p>
+            <a href="menu.html" class="hero-btn">Explore the Menu</a>
+        </div>
+      </header>
+
+     <main class="canvas-wrapper">
+
+        <section class="mission-block scroll-reveal">
+            <div class="line-accent"></div>
+            <h2 class="mission-text">
+            Deep focus hours. <span class="highlight-color">Good company.</span> Warm extractions.
+            </h2>
+            <p class="mission-subtext">
+             Ember Coffee is a space designed for whatever your morning demands. Pull up a chair to lose 
+             yourself in a project, slide into a corner to catch up with friends, or simply slow down and
+              enjoy the ritual.
+            </p>
+            
+        </section>
+
+        <section class="featured-menu-section">
+           <div class="section-header">
+            <span class="section-tag">Curated Favorites</span>
+            <h2 class="section-title">Ember Best Sellers</h2>
+            <p class="section-subtitle">The most ordered extractions for long work sessions and afternoon catch-ups.</p>
+           </div>
+
+           <div class="featured-grid">
+    
+           <div class="menu-feature-card scroll-reveal delay-1">
+            <div class="menu-card-header">
+             <h3 class="item-name">Ceremonial Matcha Latte</h3>
+             <span class="item-price">$6.50</span>
+            </div>
+            <p class="item-description">Stone-ground Japanese matcha whisked with velvety milk and a subtle melt of sweet white chocolate. Perfectly balanced for long chats and catching up with friends.</p>
+            <div class="item-meta">
+             <span class="menu-badge">The Catch-Up Favorite</span>
+             <span class="bean-origin">Origin: Colombia</span>
+            </div>
+           </div>
+
+           <div class="menu-feature-card scroll-reveal delay-2">
+            <div class="menu-card-header">
+                <h3 class="item-name">Signature Spanish Latte</h3>
+                <span class="item-price">$5.00</span>
+            </div>
+            <p class="item-description">A rich double shot of espresso layered over cold milk with a smooth, velvety swirl of condensed milk. Formulated to keep you focused through intense laptop sessions.</p>
+            <div class="item-meta">
+                <span class="menu-badge">The Deep Focus Fuel</span>
+                <span class="bean-origin">Origin: Ethiopia</span>
+            </div>
+           </div>
+
+            <div class="menu-feature-card scroll-reveal delay-3">
+            <div class="menu-card-header">
+                <h3 class="item-name">Classic Latte</h3>
+                <span class="item-price">$6.00</span>
+            </div>
+            <p class="item-description">Our house espresso poured over chilled milk and clean ice. Crisp, simple, and refreshing—built to clear your mind and unlock fresh perspectives.</p>
+            <div class="item-meta">
+                <span class="menu-badge">The Creative Spark</span>
+                <span class="bean-origin">Origin: Peru</span>
+            </div>
+            </div>
+
+        </div>
+       </section>
+
+       <section class="magazine-canvas">
+  
+  <div class="magazine-text-column scroll-reveal">
+    <div class="magazine-sticky-content">
+      <span class="section-tag">The Atmosphere</span>
+      <h2 class="section-title">Designed for Rituals</h2>
+      <p class="section-subtitle">
+        Ember Coffee is mapped out around natural light, acoustic dampening, and absolute minimalism. It’s a physical canvas built to help you disconnect, lock into deep focus work, or catch up over slow drinks.
+      </p>
+      
+      <div class="mini-manifesto-list">
+        <div class="manifesto-item">
+          <strong>Acoustic Warmth:</strong> Low-fidelity frequencies curated for deep concentration.
+        </div>
+        <div class="manifesto-item">
+          <strong>Ergonomic Anchors:</strong> Power channels and seating built for long laptop sessions.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="magazine-visual-wall">
+    <div class="media-frame frame-one scroll-reveal delay-1">
+      <img src="/images/interior-one.jpg" alt="Ember space detail" class="ember-ambient-img">
+    </div>
+    <div class="media-frame frame-two scroll-reveal delay-2">
+      <img src="/images/interior-two.jpg" alt="Ember space detail" class="ember-ambient-img">
+    </div>
+    <div class="media-frame frame-three scroll-reveal delay-3">
+      <img src="/images/interior-three.jpg" alt="Ember space detail" class="ember-ambient-img">
+    </div>
+    <div class="media-frame frame-four scroll-reveal delay-4">
+      <img src="/images/interior-four.jpg" alt="Ember space detail" class="ember-ambient-img">
+    </div>
+  </div>
+
+</section>
+
+    </main>
+    
+
+
+
+      <footer class="footer-demo footer-minimal">
+
+        <div class="footer-brand">
+          <h3>Ember Coffee</h3>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Ember Coffee. All rights reserved.</p>
+        </div>
+
+      </footer>
+</body>
+</html>
