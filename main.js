@@ -327,4 +327,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ==========================================
+  // FORCE SAFARI AUTOPLAY RECOVERY
+  // ==========================================
+  const forceSafariVideoPlay = () => {
+    const heroVideo = document.querySelector('.hero-video-asset');
+    
+    if (heroVideo) {
+      // 1. Force muted state programmatically to bypass auto-blocking
+      heroVideo.muted = true;
+      heroVideo.setAttribute('muted', '');
+      
+      // 2. Run programmatic play sequence
+      const playPromise = heroVideo.play();
+      
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If browser rules blocked the autoplay, wake it up on the first mobile touch
+          const forcePlayOnInteraction = () => {
+            heroVideo.play()
+              .then(() => {
+                document.removeEventListener('click', forcePlayOnInteraction);
+                document.removeEventListener('touchstart', forcePlayOnInteraction);
+              });
+          };
+          document.addEventListener('click', forcePlayOnInteraction);
+          document.addEventListener('touchstart', forcePlayOnInteraction);
+        });
+      }
+    }
+  };
+
+  // Run the force start sequence immediately
+  forceSafariVideoPlay();
+
 });
