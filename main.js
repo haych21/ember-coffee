@@ -121,21 +121,17 @@ document.addEventListener("DOMContentLoaded", () => {
     ambientAudio.addEventListener('timeupdate', () => savePlayerState(false));
     window.addEventListener('beforeunload', () => savePlayerState(true));
 
-    // Load and set UI elements helper
+    // Load and set UI elements helper (Pure CSS class updates only)
     const setUIPlaying = () => {
       playerContainer.classList.add('playing');
       playerStatus.textContent = 'Now Playing';
       playerStatus.style.color = 'var(--color-primary)';
-      ambientBtn.querySelector('.player-icon').textContent = '⏸';
-      ambientBtn.style.paddingLeft = '0px';
     };
 
     const setUIPaused = () => {
       playerContainer.classList.remove('playing');
       playerStatus.textContent = 'Paused';
       playerStatus.style.color = 'var(--color-text-muted)';
-      ambientBtn.querySelector('.player-icon').textContent = '▶';
-      ambientBtn.style.paddingLeft = '2px';
     };
 
     // Helper function to load and play a specific track
